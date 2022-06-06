@@ -7,15 +7,15 @@
 void main()
 {
     int gd = DETECT, gm;
-    int x,y,t;
+    int x,y,s;
     initgraph(&gd, &gm, "C:\\TC\\BGI");
     x = 100;
     y = 300;
     cout << "\nEnter Scaling factor:";
-    cin >> t;
+    cin >> s;
     bar3d (x+50,y-100,x+100,y-50,20,1);
     delay(1000);
-    bar3d (x+(t*50),y-(t*100),x+(t*100),y-(t*50),t*20,1);
+    bar3d (x+(s*50),y-(s*100),x+(s*100),y-(s*50),s*20,1);
     getch();
     closegraph();
 }
